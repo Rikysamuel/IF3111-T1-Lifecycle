@@ -13,43 +13,43 @@ public class TracerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        notify("onCreate");
+        notify("Create App");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        notify("onPause");
+        notify("Pause App");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        notify("onResume");
+        notify("Resume App");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        notify("onStop");
+        notify("Stop App");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        notify("onDestroy");
+        notify("Destroy App");
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        notify("onRestoreInstanceState");
+        notify("Restore State");
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        notify("onSaveInstanceState");
+        notify("Save State");
     }
 
     private void notify(String methodName) {
@@ -62,4 +62,5 @@ public class TracerActivity extends Activity {
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify((int) System.currentTimeMillis(), noti);
     }
+
 }

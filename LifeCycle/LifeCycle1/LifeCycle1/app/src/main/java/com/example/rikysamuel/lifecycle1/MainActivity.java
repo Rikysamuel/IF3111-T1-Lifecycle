@@ -9,7 +9,7 @@ public class MainActivity extends TracerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainactivity);
+        setContentView(R.layout.spinner);
     }
 
     public void onClick(View view) {
